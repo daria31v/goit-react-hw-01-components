@@ -12,27 +12,27 @@ currency - тип валюти */
 // import transactions from "path/to/transactions.json";
 // <TransactionHistory items={transactions} />;
 
-<TransactionHistory >
-<table class="transaction-history">
-  <thead>
-    <tr>
-      <th>Type</th>
-      <th>Amount</th>
-      <th>Currency</th>
-    </tr>
-  </thead>
+// {/* <TransactionHistory >
+// <table class="transaction-history">
+//   <thead>
+//     <tr>
+//       <th>Type</th>
+//       <th>Amount</th>
+//       <th>Currency</th>
+//     </tr>
+//   </thead>
 
-  <tbody>
-    <tr>
-      <td>Invoice</td>
-      <td>125</td>
-      <td>USD</td>
-    </tr>
-    <tr>
-      <td>Withdrawal</td>
-      <td>85</td>
-      <td>USD</td>
-    </tr>
-  </tbody>
-    </table>
-</TransactionHistory>
+//   <tbody>
+//     <tr>
+//       <td>Invoice</td>
+//       <td>125</td>
+//       <td>USD</td>
+//     </tr>
+//     <tr>
+//       <td>Withdrawal</td>
+//       <td>85</td>
+//       <td>USD</td>
+//     </tr>
+//   </tbody>
+//     </table>
+// </TransactionHistory> */}
