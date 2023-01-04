@@ -9,20 +9,22 @@ import PropTypes from 'prop-types';
 import data from 'Data/data.json';
 
 export const Statistics = ({
-    data: { id, label, percentage },
+    data
 }) => {
-    return (
-        data.map(data => (
-                <section key={id}>
-                    <h2>Upload stats</h2>
-                    <ul >
-                        <li>
-                            <span>{label}</span>
-                            <span>{percentage}</span>
-                        </li>
-                    </ul>
-                </section>)
-    ))
+    // return (
+    //     {
+    //         data.map(data => (
+    //             <section key={data.id}>
+    //                 <h2>Upload stats</h2>
+    //                 <ul >
+    //                     <li>
+    //                         <span>{data.label}</span>
+    //                         <span>{data.percentage}</span>
+    //                     </li>
+    //                 </ul>
+    //             </section>)
+    //         )
+    //     })
 }
 
 
