@@ -1,6 +1,18 @@
-// Компонент повинен приймати один проп friends – масив об'єктів друзів.
-// Компонент повинен створювати DOM наступної структури.
+import PropTypes from 'prop-types';
+import friends from 'Data/friends.json';
+import { FriendListItem } from '../FriendListItem/FriendListItem';
 
-// <ul class="friend-list">
-//   <!-- Довільна кіл-сть FriendListItem -->
-// </ul> 
+export const FriendList = ({ friends}) => {
+  return (
+    <ul>
+      {friends.map(friends => (
+        <FriendListItem key={friends.id} friends={friends} />
+      ))}
+    </ul>
+  );
+};
+
+FriendList.propTypes = {
+  friends: PropTypes.number.isRequired,
+ 
+}.isRequired;
