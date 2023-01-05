@@ -1,6 +1,4 @@
-
 import PropTypes from 'prop-types';
-
 // import { UserFile } from './Profile.styled'
 
 export const Profile = ({
