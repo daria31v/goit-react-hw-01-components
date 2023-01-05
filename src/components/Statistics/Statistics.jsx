@@ -8,6 +8,7 @@
 
 import PropTypes from 'prop-types';
 import data from 'Data/data.json';
+
 const title = 'Upload stats';
 export const Statistics = (stats = { data }) => {
   return (

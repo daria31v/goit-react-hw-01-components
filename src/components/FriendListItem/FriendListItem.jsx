@@ -6,14 +6,14 @@
 // Це можна зробити за допомогою різних CSS - класів або Styled Components.
 
 import PropTypes from 'prop-types';
-import friends from 'Data/friends.json';
 
-export const FriendListItem = ({ friends: {avatar, name, isOnline} }) => {
+
+export const FriendListItem = ({ friends }) => {
   return (
     <li>
-      <span>{isOnline}</span>
-      <img src={avatar} alt="User avatar" width="48" />
-      <p>{name}</p>
+      <span>{friends.isOnline}</span>
+      <img src={friends.avatar} alt="User avatar" width="48" />
+      <p>{friends.name}</p>
     </li>
   );
 };
