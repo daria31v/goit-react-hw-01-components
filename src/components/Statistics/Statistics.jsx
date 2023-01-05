@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import data from 'Data/data.json';
 import {StatistscsCard, Title, StastisticsList, StastisticsItem} from './Statistics.styled'
+
+
 const title = 'Upload stats';
 export const Statistics = (stats = { data }) => {
   return (
