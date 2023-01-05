@@ -12,15 +12,16 @@ const title = 'Upload stats';
 export const Statistics = (stats = { data }) => {
   return (
     <section>
-      <h2>{title}</h2>
+        <h2>{title}</h2>
+        <ul>  
       {data.map(data => (
-        <ul>
-          <li key={data.id}>
+        <li key={data.id}>
             <span>{data.label}</span>
             <span>{data.percentage}</span>
           </li>
-        </ul>
+       
       ))}
+          </ul>
     </section>
   );
 };
