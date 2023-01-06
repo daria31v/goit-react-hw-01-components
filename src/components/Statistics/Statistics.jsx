@@ -7,18 +7,10 @@ import {
   StastisticsItem,
 } from './Statistics.styled';
 
-// const title = 'Upload stats';
-// function TitleRender(props) {
-//   return <Title>{title}</Title>;
-// }
-
-export const Statistics = ({ title }, { stats }) => {
- 
-  if ({ title } && { stats }) {
-    return (
-      <StatistscsCard>
-        <Title>{title}</Title>
-        <StastisticsList>
+export function Statistics({title}, {stats}) {
+  return <StatistscsCard>
+    {title && <Title>{title}</Title>}
+    <StastisticsList>
           {data.map(data => (
             <StastisticsItem key={data.id}>
               <span>{data.label}</span>
@@ -26,25 +18,10 @@ export const Statistics = ({ title }, { stats }) => {
             </StastisticsItem>
           ))}
         </StastisticsList>
-      </StatistscsCard>
-    );
-  } else {
-    return (
-      <StatistscsCard>
-        <StastisticsList>
-          {data.map(data => (
-            <StastisticsItem key={data.id}>
-              <span>{data.label}</span>
-              <span>{data.percentage}</span>
-            </StastisticsItem>
-          ))}
-        </StastisticsList>
-      </StatistscsCard>
-    );
-  };
+  </StatistscsCard>
 }
-Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
-  stats: PropTypes.number.isRequired,
-}.isRequired;
 
+Statistics.prototypes = {
+  title: PropTypes.string,
+  stats: PropTypes.number.isRequired,
+}.isRequired
